@@ -93,6 +93,8 @@ export default defineComponent({
   name: "HelloWorld",
   props: {
     msg: String,
+    background: String,
+    otherProp: String,
   },
 });
 </script>
@@ -101,6 +103,7 @@ export default defineComponent({
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
+  background: v-bind(background);
 }
 ul {
   list-style-type: none;
